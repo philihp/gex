@@ -4,8 +4,7 @@ defmodule Gex.GameBoard do
   # Returns the starting state of the board, e.g. after board setup
   @callback default_state() :: StateObservation.t()
 
-  # Optional, choose a random start state, which is useful for training
-  # @callback random_state() :: %StateObservation{}
+  @callback random_state() :: StateObservation.t()
 
-  # @optional_callbacks random_state: 0
+  @optional_callbacks random_state: 0
 end
